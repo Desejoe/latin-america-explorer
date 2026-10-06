@@ -24,7 +24,7 @@ ul {
   --color-bg: #faf7f2;         /* warm off-white */
   --color-text: #1a1a1a;       /* almost black */
   --color-accent: #c1440e;     /* terracotta */
-  --color-muted: #6b6b6b;      /* gray for secondary text */
+  --color-muted: rgb(92, 92, 92);      /* gray for secondary text */
   --color-border: #e0dcd5;     /* subtle borders */
 
   --font-heading: 'Playfair Display', serif;
@@ -129,4 +129,16 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 .hero-cta:hover {
   transform: translateY(-2px);
   background-color: #a83a0c;  /* slightly darker */
+}
+
+/* ===== ABOUT ===== */
+.about {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.about p {
+  max-width: 700px;
+  margin-bottom: 1rem;
+  color: var(--color-muted);
 }
