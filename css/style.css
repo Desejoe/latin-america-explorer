@@ -184,3 +184,12 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 .countries-grid a:hover {
   text-decoration: underline;
 }
+
+/* ===== FOOTER ===== */
+.site-footer {
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
