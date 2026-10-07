@@ -143,6 +143,25 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   color: var(--color-muted);
 }
 
+.about-list {
+  list-style: none;      
+  margin-top: 1rem;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-muted);
+}
+
+.about-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
 /* ===== COUNTRIES ===== */
 .countries {
   padding: 5rem 0;
