@@ -212,3 +212,24 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   font-size: 0.9rem;
   color: var(--color-muted);
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h1 { font-size: 2.25rem; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1.1rem; }
+  h2 { font-size: 1.6rem; }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-nav ul {
+    gap: 1.25rem;
+  }
+
+  .countries-grid {
+    grid-template-columns: 1fr;
+  }
+}
