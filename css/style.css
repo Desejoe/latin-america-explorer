@@ -209,6 +209,191 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   color: var(--color-muted);
 }
 
+
+
+
+
+/* ===== COUNTRY HERO ===== */
+.country-hero {
+  padding: 8rem 0 5rem;
+  text-align: center;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1785367817635-e656a2af53ab?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  border-bottom: none;
+}
+
+.country-hero__flag {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.country-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.country-hero__tagline {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== FACTS ===== */
+.facts {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.facts-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+}
+
+.facts-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+.facts-list li strong {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* ===== COUNTRY ABOUT ===== */
+
+.country-hero__flag {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.country-about {
+  padding: 4rem 0;
+}
+
+.country-about p {
+  max-width: 720px;
+  margin-bottom: 1.25rem;
+  color: var(--color-muted);
+}
+
+.country-about p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== CULTURE ===== */
+.culture {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.culture h3 {
+  color: var(--color-accent);
+  margin-top: 2rem;
+}
+
+.culture h3:first-of-type {
+  margin-top: 0;
+}
+
+.culture p {
+  max-width: 720px;
+  margin-bottom: 0.5rem;
+  color: var(--color-muted);
+}
+
+/* ===== PLACES ===== */
+.places {
+  padding: 4rem 0;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+
+.places-grid__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 0.5rem;
+}
+
+.places-grid article {
+  background-color: #fff;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.places-grid article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.places-grid h3 {
+  color: var(--color-accent);
+}
+
+.places-grid p {
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
+
+/* ===== FUN FACTS ===== */
+.fun-facts {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.facts-interesting {
+  max-width: 720px;
+}
+
+.facts-interesting li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+}
+
+.facts-interesting li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+  display: inline-block;
+  margin: 2rem 0 4rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+}
+
+
+
+
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   h1 { font-size: 2.25rem; }
@@ -226,6 +411,22 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   }
 
   .countries-grid {
+    grid-template-columns: 1fr;
+  }
+
+    .country-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .country-hero__flag {
+    font-size: 3rem;
+  }
+
+  .facts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .places-grid {
     grid-template-columns: 1fr;
   }
 }
