@@ -96,8 +96,17 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
 /* ===== HERO ===== */
 .hero {
-  padding: 5rem 0;
+  padding: 6rem 0 5rem;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero--home {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://images.unsplash.com/photo-1609348489946-67a34c43d94f?q=80&w=1266&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');
 }
 
 .hero h1 {
@@ -107,7 +116,6 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
 .hero p {
   font-size: 1.25rem;
-  color: var(--color-muted);
   max-width: 600px;
   margin: 0 auto 2rem;
 }
@@ -160,7 +168,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
 /* ===== COUNTRIES ===== */
 .countries {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .countries-grid {
@@ -169,9 +177,18 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   gap: var(--gap);
 }
 
+.countries-grid__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
 .countries-grid article {
-  background: #fff;
-  padding: 2rem;
+  background-color: #fff;
+  padding: 1.75rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -179,11 +196,12 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
 .countries-grid article:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .countries-grid h3 {
   color: var(--color-accent);
+  margin-bottom: 0.5rem;
 }
 
 .countries-grid p {
