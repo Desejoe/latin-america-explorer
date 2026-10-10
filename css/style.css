@@ -227,9 +227,11 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 }
 
 .country-hero__flag {
-  font-size: 4rem;
-  line-height: 1;
-  margin-bottom: 1rem;
+  width: 100px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .country-hero h1 {
@@ -268,14 +270,6 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
 /* ===== COUNTRY ABOUT ===== */
 
-.country-hero__flag {
-  width: 100px;
-  height: auto;
-  margin: 0 auto 1.5rem;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
 .country-about {
   padding: 4rem 0;
 }
@@ -296,19 +290,46 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   background-color: #fff;
 }
 
-.culture h3 {
+.culture-item {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: var(--color-bg);
+  border-radius: var(--radius);
+}
+
+.culture-item:last-child {
+  margin-bottom: 0;
+}
+
+.culture-item--reverse {
+  flex-direction: row-reverse;
+}
+
+.culture-item__text {
+  flex: 1;
+}
+
+.culture-item__text h3 {
   color: var(--color-accent);
-  margin-top: 2rem;
-}
-
-.culture h3:first-of-type {
   margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
-.culture p {
-  max-width: 720px;
-  margin-bottom: 0.5rem;
+.culture-item__text p {
   color: var(--color-muted);
+  margin-bottom: 0;
+}
+
+.culture-item__img {
+  flex: 0.5;
+  max-width: 420px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* ===== PLACES ===== */
@@ -429,5 +450,15 @@ h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   .places-grid {
     grid-template-columns: 1fr;
   }
+
+  .culture-item,
+.culture-item--reverse {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.culture-item {
+  margin-bottom: 2.5rem;
+}
 }
 
